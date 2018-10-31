@@ -1,0 +1,27 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Profile</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content no-padding style="background:#F9FAFB" scroll="false">
+  <div style="background:#ffffff; padding:10px; width:90%; font-size:15px; margin:0 auto;">
+    <div style="margin:30px auto; text-align:center">
+        <ion-icon name="ios-contact" 
+            style="color:#2B2E33;
+                    font-size:95px;
+                    text-align:center;
+          "> 
+      </ion-icon>
+    </div>
+
+    <table>
+    <tr><td   style="padding:10px; margin:4px;"><b>UserID</b></td> <td>{{userDetails.userid | uppercase}}</td></tr>
+    <tr><td   style="padding:10px; margin:4px;"><b>Name</b></td> <td>{{userDetails.uname | uppercase}}</td></tr>
+    <tr><td   style="padding:10px; margin:4px;"><b>MobileNo.</b></td> <td>{{userDetails.umobile}}</td></tr>
+    </table>
+  </div>
+</ion-content>

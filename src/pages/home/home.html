@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar >
+    <button ion-button menuToggle class="menubtn">
+      <ion-icon name="md-menu"></ion-icon>
+    </button>
+    <ion-title class="menutext">Home</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content style="background: #F9FAFB;">
+  <div class="adsdiv" *ngFor="let item of dataSet;  let i = index;">
+    <img src="{{item.adslink}}" alt="">
+  </div>
+  <div class="posts">
+    <ion-card *ngFor="let item of dataSetPosts;  let i = index;">
+      <ion-card-header>
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="./assets/img/avatar.png">
+          </ion-avatar>
+          <h2>{{item.ptitle}}</h2>
+          <p>{{item.posttime}}</p>
+        </ion-item>
+      </ion-card-header>
+      <ion-card-content>
+        {{item.pdesc}}
+      </ion-card-content>
+  </ion-card>
+</div>
+</ion-content>

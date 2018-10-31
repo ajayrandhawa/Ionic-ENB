@@ -1,0 +1,58 @@
+<ion-menu [content]="content" type="overlay">
+  <ion-header>
+    <div class="studentinfo">
+       <div  style="text-align:center;">
+         <img src="./assets/img/logo.png" alt=""> 
+       </div>
+    </div>
+  </ion-header>
+
+  <ion-content no-padding>
+<div class="menu">
+    <ion-list no-padding no-margin style="margin-top:50px;">
+      <button ion-button clear no-padding no-margin (click)="onclickHome()" menuToggle>
+          <ion-item no-lines class="menuitem">
+            <ion-icon name="ios-home" ></ion-icon>
+            &nbsp;&nbsp;
+            Home
+          </ion-item>
+      </button>
+    </ion-list>
+
+    <ion-list no-padding no-margin>
+      <button ion-button clear no-padding no-margin (click)="onclickAssignments()" menuToggle>
+          <ion-item no-lines class="menuitem">
+            <ion-icon name="md-document" ></ion-icon>
+            &nbsp;&nbsp;
+            Courses
+          </ion-item>
+          </button>
+    </ion-list>
+
+
+    <ion-list no-padding no-margin>
+        <button ion-button clear no-padding no-margin (click)="onclickprofile()" menuToggle>
+            <ion-item no-lines class="menuitem">
+              <ion-icon name="ios-contact" ></ion-icon>
+              &nbsp;&nbsp;
+             View Profile
+            </ion-item>
+            </button>
+      </ion-list>
+
+     <ion-list no-padding no-margin>
+       <button ion-button clear no-padding no-margin (click)="onclicklogout()" menuToggle>
+          <ion-item no-lines class="menuitem">
+            <ion-icon name="md-log-out" ></ion-icon>
+            &nbsp;&nbsp;
+           Logout
+          </ion-item>
+          </button>
+    </ion-list>
+  </div>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

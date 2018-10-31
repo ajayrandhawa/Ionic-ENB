@@ -1,0 +1,22 @@
+<ion-content no-padding no-margin>
+  <div class="logo">
+    <img src="./assets/img/logo.png" alt="Logo">
+  </div>
+  <h3 class="std"><b>Login</b></h3>
+  <ion-list class="list" inset>
+    <ion-item class="itemlogin">
+      <ion-input placeholder="Enter Mobile No." type="number" [(ngModel)]="userData.mnumber"></ion-input>
+    </ion-item>
+    <ion-item class="itemlogin">
+      <ion-input placeholder="Enter Password" type="password" [(ngModel)]="userData.password"></ion-input>
+    </ion-item>
+    <div class="btnholder">
+      <button class="loginbtn" ion-button round large no-padding no-margin (click)="login()">
+        Login
+      </button>
+    </div>
+    <ion-item class="website">
+      <p>For Registration Visit <a target="_blank" href="http://enbindia.com">EnbIndia</a></p>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,14 @@
+{
+  "name": "Acetfy",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "proxies": [
+    {
+      "path": "/app",
+      "proxyUrl": "http://enbindia.learnpunjab.org"
+    }
+  ],
+  "pro_id": "b6231308"
+}
